@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  background: #1e293b;
+  color: #fff;
+  padding: 16px 24px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.cart-panel {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.cart-info {
+  font-size: 16px;
+}
+
+main {
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.card .category {
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.card .price {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 12px 0;
+}
+
+.card button,
+.clear-button {
+  background: #2563eb;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  padding: 9px 14px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.card button:hover {
+  background: #1d4ed8;
+}
+
+.clear-button {
+  background: #dc2626;
+}
+
+.clear-button:hover {
+  background: #b91c1c;
+}
+
+@media (max-width: 600px) {
+  header {
+    align-items: flex-start;
+  }
+}
